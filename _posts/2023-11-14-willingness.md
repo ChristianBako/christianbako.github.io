@@ -2,6 +2,8 @@
 layout: post
 title:  "DRAFT: Yet Another Jeff Bezosism"
 ---
+# DRAFT: Yet Another Jeff Bezosism
+_This is a DRAFT post, which means it's not fully formed. I don't mind publishing DRAFTs, but it's not a finished product._
 
 When I was a kid, I went to a [Montessori](https://en.wikipedia.org/wiki/Montessori_education) school. 
 
