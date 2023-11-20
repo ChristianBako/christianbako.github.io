@@ -40,7 +40,7 @@
   <h1> Things that I've built or written </h1>
   <h2> Posts that are too long for Twitter. </h2>
   <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts[::-1] %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
