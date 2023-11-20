@@ -36,6 +36,17 @@
   <div class="lilPadding">
   <h1> Hi! I'm Chris </h1>
   <p> Just a simple software engineer in San Francisco. </p>
+    
+  <h1> Things that I've built or written </h1>
+  <h2> Posts that are too long for Twitter. </h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  
   <h1> Useful Stuff I've collected. </h1>
   <h2> Good reads </h2>
   <ul>
@@ -77,18 +88,8 @@
     <h2> Lectures and courses </h2>
     <ul>
       <li>
-        <a href="https://brandonspark.github.io/150/"> functional programming course from CMU
+        <a href="https://brandonspark.github.io/150/"> functional programming course from CMU </a>
       </li>
     </ul>
-    
-    <h2> Posts that are too long for Twitter. </h2>
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    
   </div>
 </body>
