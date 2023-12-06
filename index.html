@@ -131,7 +131,6 @@ Have fun :)
   </div>
   <h1> Things that I've built or written </h1>
   <h2> Posts that are too long for Twitter. </h2>
-  <p><a href="https://buttondown.email/chrisby">Subscribe!</p>
   <ul>
     {% for post in site.posts %}
     <li>
@@ -139,6 +138,21 @@ Have fun :)
     </li>
     {% endfor %}
   </ul>
+  <h3>Subscribe!</h3>
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
+    class="embeddable-buttondown-form"
+  >
+  <label for="bd-email">Enter your email!</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
   
   <h1> Useful Stuff I've collected. </h1>
   <h2> Most important reads for software devs. </h2>
