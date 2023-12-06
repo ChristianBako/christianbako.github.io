@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-feed
+title: Chris's Small Ecofriendly Blog
+description: An exciting website!
+author: Chris Bakopoulos
