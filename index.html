@@ -99,7 +99,6 @@ Have fun :)
     }
       
     body {
-      
       max-width: 60em;
       margin: auto;
     }
@@ -112,6 +111,11 @@ Have fun :)
 
     a:hover {
       color: lightblue;
+    }
+
+    button {
+      background: whitesmoke;
+      color: black;
     }
   </style>
   
@@ -149,7 +153,7 @@ Have fun :)
           Hi! I'm Chris           
         </h1>
         <div x-data="{ darkMode: false }">
-          <button x-on:click="darkMode = !darkMode; toggleMode()">Toggle Mode</button>
+          <button x-on:click="darkMode = !darkMode; toggleMode()">
             Dark Mode
           </button>
         </div>
