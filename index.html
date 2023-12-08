@@ -148,10 +148,11 @@ Have fun :)
         <h1>
           Hi! I'm Chris           
         </h1>
-      
-        <button>
-          Dark Mode
-        </button>
+        <div x-data="{ darkMode: false }">
+          <button x-on:click="darkMode = !darkMode; toggleMode()">Toggle Mode</button>
+            Dark Mode
+          </button>
+        </div>
     </div>
     <div class="aboutContainer"> 
       <img class="profilePhoto lilPadding" src="https://chrisbako.com/media/profile_photo.PNG" alt="My sexy profile photo"> 
@@ -239,4 +240,14 @@ Have fun :)
       <li><a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Everything Matt Levine Writes</a></li>
     </ul>
   </div>
+  <script>
+    function toggleMode() {
+        const bodyClasses = document.body.classList;
+        bodyClasses.toggle('lightMode');
+        bodyClasses.toggle('darkMode');
+    }
+
+    // Set initial mode
+    document.body.classList.add('lightMode');
+  </script>
 </body>
