@@ -71,9 +71,17 @@ Have fun :)
       color: black;
     }
 
+    .lightMode {
+      background: cornflowerblue;
+    }
+
+    .darkMode {
+      background: #233e6f;
+    }
+
     * {
        font-family: 'Montserrat', sans-serif;
-       background: cornflowerblue;
+       color: whitesmoke;
     }
 
     .lilPadding {
@@ -91,7 +99,7 @@ Have fun :)
     }
       
     body {
-      color: whitesmoke;
+      
       max-width: 60em;
       margin: auto;
     }
@@ -131,7 +139,7 @@ Have fun :)
     gtag('config', 'G-ZLW7M5WWY0');
   </script>
 </head>
-<body> 
+<body class="lightMode"> 
   <div class="lilPadding">
     <div style="display: flex;
         justify-content: space-between;
@@ -139,7 +147,8 @@ Have fun :)
         align-items: center;">
         <h1>
           Hi! I'm Chris           
-        </h1> 
+        </h1>
+      
         <button>
           Dark Mode
         </button>
