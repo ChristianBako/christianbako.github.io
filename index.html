@@ -61,6 +61,7 @@ Have fun :)
       const darkMode = localStorage.getItem('darkMode') === 'true';
       const className = darkMode ? 'darkMode' : 'lightMode';
       document.documentElement.classList.add(className);
+      document.documentElement.classList.add('enable-transitions');
     })();
   </script>
 
@@ -170,10 +171,6 @@ Have fun :)
       <div x-data="{
       darkMode: localStorage.getItem('darkMode') === 'true',
       // Javascript is epic.
-              init() {
-                  // Add 'enable-transitions' class first, but without applying the theme
-                  document.documentElement.classList.add('enable-transitions');
-              },
               toggleMode() {
                   this.darkMode = !this.darkMode;
                   localStorage.setItem('darkMode', this.darkMode);
