@@ -55,6 +55,15 @@ Ah nice you've found my little hidden comment.
 Have fun :) 
 --> 
 <head>
+  <script>
+    // Immediately set the initial theme to reduce white flash
+    (function() {
+      const darkMode = localStorage.getItem('darkMode') === 'true';
+      const className = darkMode ? 'darkMode' : 'lightMode';
+      document.documentElement.classList.add(className);
+    })();
+  </script>
+
   <title>
     My Small Ecofriendly Blog
   </title>
@@ -66,6 +75,11 @@ Have fun :)
         display: none;
       }
     }
+
+    .enable-transitions {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
     .subscribeForm {
       background: whitesmoke;
       color: black;
@@ -144,7 +158,7 @@ Have fun :)
     gtag('config', 'G-ZLW7M5WWY0');
   </script>
 </head>
-<body class="lightMode"> 
+<body>
   <div class="lilPadding">
     <div style="display: flex;
         justify-content: space-between;
@@ -153,11 +167,28 @@ Have fun :)
         <h1>
           Hi! I'm Chris           
         </h1>
-        <div x-data="{ darkMode: false }">
-          <button x-on:click="darkMode = !darkMode; toggleMode()">
-            Dark Mode
-          </button>
-        </div>
+      <div x-data="{
+      darkMode: localStorage.getItem('darkMode') === 'true',
+      // Javascript is epic.
+              init() {
+                  // Add 'enable-transitions' class first, but without applying the theme
+                  document.body.classList.add('enable-transitions');
+              },
+              toggleMode() {
+                  this.darkMode = !this.darkMode;
+                  localStorage.setItem('darkMode', this.darkMode);
+                  this.applyTheme();
+              },
+              applyTheme() {
+                  const bodyClasses = document.body.classList;
+                  bodyClasses.toggle('lightMode', !this.darkMode);
+                  bodyClasses.toggle('darkMode', this.darkMode);
+              }
+            }"
+           x-init="init()">
+        <button x-on:click="toggleMode()" x-text="darkMode ? 'Light Mode' : 'Dark Mode'"></button>
+      </div>
+      </div>
     </div>
     <div class="aboutContainer"> 
       <img class="profilePhoto lilPadding" src="https://chrisbako.com/media/profile_photo.PNG" alt="My sexy profile photo"> 
@@ -251,14 +282,5 @@ Have fun :)
       <li><a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Everything Matt Levine Writes</a></li>
     </ul>
   </div>
-  <script>
-    function toggleMode() {
-        const bodyClasses = document.body.classList;
-        bodyClasses.toggle('lightMode');
-        bodyClasses.toggle('darkMode');
-    }
 
-    // Set initial mode
-    document.body.classList.add('lightMode');
-  </script>
 </body>
