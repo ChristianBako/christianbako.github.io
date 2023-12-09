@@ -172,7 +172,7 @@ Have fun :)
       // Javascript is epic.
               init() {
                   // Add 'enable-transitions' class first, but without applying the theme
-                  document.body.classList.add('enable-transitions');
+                  document.documentElement.classList.add('enable-transitions');
               },
               toggleMode() {
                   this.darkMode = !this.darkMode;
@@ -180,9 +180,9 @@ Have fun :)
                   this.applyTheme();
               },
               applyTheme() {
-                  const bodyClasses = document.body.classList;
-                  bodyClasses.toggle('lightMode', !this.darkMode);
-                  bodyClasses.toggle('darkMode', this.darkMode);
+                  const docClasses = document.documentElement.classList;
+                  docClasses.toggle('lightMode', !this.darkMode);
+                  docClasses.toggle('darkMode', this.darkMode);
               }
             }"
            x-init="init()">
