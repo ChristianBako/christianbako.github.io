@@ -144,7 +144,7 @@ Have fun :)
     gtag('config', 'G-ZLW7M5WWY0');
   </script>
 </head>
-<body> 
+<body class="lightMode"> 
   <div class="lilPadding">
     <div style="display: flex;
         justify-content: space-between;
@@ -154,7 +154,7 @@ Have fun :)
           Hi! I'm Chris           
         </h1>
         <div x-data="{ darkMode: false }">
-            <button x-on:click="darkMode = !darkMode; applyTheme()">
+          <button x-on:click="darkMode = !darkMode; toggleMode()">
             Dark Mode
           </button>
         </div>
@@ -251,16 +251,14 @@ Have fun :)
       <li><a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Everything Matt Levine Writes</a></li>
     </ul>
   </div>
-    <script>
-      function applyTheme() {
-          const bodyClasses = document.body.classList;
-          bodyClasses.toggle('lightMode', !darkMode);
-          bodyClasses.toggle('darkMode', darkMode);
-       }
-        
-      document.addEventListener('DOMContentLoaded', () => {
-          const darkMode = localStorage.getItem('darkMode') === 'true';
-          document.body.classList.add(darkMode ? 'darkMode' : 'lightMode');
-      });
-    </script>
+  <script>
+    function toggleMode() {
+        const bodyClasses = document.body.classList;
+        bodyClasses.toggle('lightMode');
+        bodyClasses.toggle('darkMode');
+    }
+
+    // Set initial mode
+    document.body.classList.add('lightMode');
+  </script>
 </body>
