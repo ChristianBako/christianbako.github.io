@@ -55,6 +55,7 @@ I’ve done a ton of travel these past few years and this is what I’d tell som
 49. Airplane mode is a literal joke. If your phone could take down a plane they wouldn’t let you have it on the plane. 
 50. Dress for the weather you’re going to. 
 51. You will end up on the runway for an hour+ at the most inconvenient time. 
+52. Being first on the plane is overrated. It's the same amount of waiting. 
 
 [^1]: Disliking the govt non withstanding. It’s like 80$ for five years. 
 [^2]: Air travel is a metagame between the heaviest most profitable users, and the airlines.  You’re prob neither. 
