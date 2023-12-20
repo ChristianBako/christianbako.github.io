@@ -112,6 +112,10 @@ Have fun :)
     .aboutContainer {
       display: flex;
     }
+    
+    .creationsContainer {
+      display: flex;
+    }
       
     body {
       max-width: 60em;
@@ -196,30 +200,39 @@ Have fun :)
         <p> I do photography, ride motorcycles, play games, shred, and read too much in my spare time. </p>
       </div>
     </div>
-    <h1> Things that I've built or written </h1>
-    <h2> Posts that are too long for Twitter. </h2>
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    <h3>Subscribe!</h3>
-    <form
-      action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
-      method="post"
-      target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
-      class="embeddable-buttondown-form"
-    >
-    <label for="bd-email">Enter your email:</label>
-    <input class="subscribeForm" type="email" name="email" id="bd-email" />
-    <input class="subscribeForm" type="submit" value="Subscribe" />
-    <p>
-      <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
-    </p>
-  </form>
+    <div class="creationsContainer">
+      <div>
+        <h2> Posts that are too long for Twitter. </h2>
+        <ul>
+          {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <h3>Subscribe!</h3>
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
+          class="embeddable-buttondown-form"
+        >
+        <label for="bd-email">Enter your email:</label>
+        <input class="subscribeForm" type="email" name="email" id="bd-email" />
+        <input class="subscribeForm" type="submit" value="Subscribe" />
+        <p>
+          <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
+        </p>
+      </form>
+    </div>
+    <div>
+          <h2>Things I've built! </h2>
+          <ul>
+            <li> This website! </li>
+          </ul>
+    </div>
+  </div>
   
   <h1> Useful Stuff I've collected. </h1>
   <h2> Most important reads for software devs. </h2>
