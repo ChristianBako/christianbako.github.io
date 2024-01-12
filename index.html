@@ -70,11 +70,6 @@ Have fun :)
     <style>
         @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-        @media (max-width: 1000px) {
-            .profilePhoto {
-                display: none;
-            }
-        }
 
         .enable-transitions {
             transition: background-color 0.3s, color 0.3s;
@@ -141,6 +136,25 @@ Have fun :)
         button {
             background: whitesmoke;
             color: black;
+        }
+
+        /* specificity is dumb */
+        @media (max-width: 1000px) {
+            .profilePhoto {
+                display: none;
+            }
+
+            .aboutContainer {
+                display : inline;
+            }
+
+            .creationsContainer {
+                display : inline; 
+            }
+
+            .resourcesContainer {
+                display : inline;
+            }
         }
     </style>
 
