@@ -236,6 +236,13 @@ Have fun :)
         <h1>
             Hi! I'm Chris
         </h1>
+                    
+        <div class="bonfire">
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="logs"></div>
+          </div>
         <div x-data="{
       darkMode: localStorage.getItem('darkMode') === 'true',
       // Javascript is epic.
@@ -250,13 +257,7 @@ Have fun :)
                   docClasses.toggle('darkMode', this.darkMode);
               }
             }">
-            
-            <div class="bonfire">
-                    <div class="flame"></div>
-                    <div class="flame"></div>
-                    <div class="flame"></div>
-                    <div class="logs"></div>
-              </div>
+
             <button x-on:click="toggleMode()" x-text="darkMode ? 'Light Mode' : 'Dark Mode'"></button>
         </div>
     </div>
