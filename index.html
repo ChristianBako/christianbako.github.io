@@ -104,6 +104,7 @@ Have fun :)
 
         .aboutContainer {
             display: flex;
+            justify-content: space-evenly;
         }
 
         .creationsContainer {
@@ -266,70 +267,73 @@ Have fun :)
     <img class="profilePhoto lilPadding" src="https://chrisbako.com/media/profile_photo.PNG"
          alt="My sexy profile photo">
     <div class="lilPadding">
-        <p> Just a simple software engineer in San Francisco. </p>
-        <p> I've worked on <a href="https://www.linkedin.com/in/chrisby/">Linkedin's</a> infra, Amazon Alexa, and SIG on
-            tools for sysadmins/doing devopsy sysadminny stuff.</p>
-        <p> I'm interested in software engineering, computer science, economnics, art and really anything else you might
-            be interested in.</p>
-        <p> hmu on <a href="https://twitter.com/BakoTac0">twitter/X</a> if you wanna chat! If you're excited about
-            something, or know a lot no matter how niche I'd love to hear it.</p>
-        <p> I do photography, ride motorcycles, play games, shred, and read too much in my spare time. </p>
+        <div>
+            <p> Just a simple software engineer in San Francisco. </p>
+            <p> I've worked on <a href="https://www.linkedin.com/in/chrisby/">Linkedin's</a> infra, Amazon Alexa, and SIG on
+                tools for sysadmins/doing devopsy sysadminny stuff.</p>
+            <p> I'm interested in software engineering, computer science, economnics, art and really anything else you might
+                be interested in.</p>
+            <p> hmu on <a href="https://twitter.com/BakoTac0">twitter/X</a> if you wanna chat! If you're excited about
+                something, or know a lot no matter how niche I'd love to hear it.</p>
+            <p> I do photography, ride motorcycles, play games, shred, and read too much in my spare time. </p>
+        </div>
+        <div class="creationsContainer">
+            <div class="lilPadding">
+                <h2> Posts that are too long for Twitter</h2>
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <h3>Subscribe!</h3>
+                <form
+                        action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
+                        method="post"
+                        target="popupwindow"
+                        onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
+                        class="embeddable-buttondown-form"
+                >
+                    <label for="bd-email">Enter your email:</label>
+                    <input class="subscribeForm" type="email" name="email" id="bd-email"/>
+                    <input class="subscribeForm" type="submit" value="Subscribe"/>
+                    <p>
+                        <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
+                    </p>
+                </form>
+            </div>
+            <div class="lilPadding">
+                <h2>Things I've built</h2>
+                <ul>
+                    <li> This website!</li>
+                </ul>
+            </div>
+            <div class="lilPadding">
+                <fieldset>
+                    <legend>2024 Goal List</legend>
+                    <div>
+                        <span>&#x2B1C;</span> <!-- Checked emoji -->
+                        <label>Make a dollar on the internet</label>
+                    </div>
+                    <div>
+                        <span>&#x2B1C;</span> <!-- Unchecked emoji -->
+                        <label>Start a magazine for my friends</label>
+                    </div>
+                    <div>
+                        <span>&#x2B1C;</span> <!-- Unchecked emoji -->
+                        <label>Write one blog post a month</label>
+                    </div>
+                    <div>
+                        <span>&#x2B1C;</span> <!-- Unchecked emoji -->
+                        <label>Go snowboarding 5 times🤙</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </div>
 </div>
-<div class="creationsContainer">
-    <div class="lilPadding">
-        <h2> Posts that are too long for Twitter</h2>
-        <ul>
-            {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <h3>Subscribe!</h3>
-        <form
-                action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
-                method="post"
-                target="popupwindow"
-                onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
-                class="embeddable-buttondown-form"
-        >
-            <label for="bd-email">Enter your email:</label>
-            <input class="subscribeForm" type="email" name="email" id="bd-email"/>
-            <input class="subscribeForm" type="submit" value="Subscribe"/>
-            <p>
-                <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
-            </p>
-        </form>
-    </div>
-    <div class="lilPadding">
-        <h2>Things I've built</h2>
-        <ul>
-            <li> This website!</li>
-        </ul>
-    </div>
-    <div class="lilPadding">
-        <fieldset>
-            <legend>2024 Goal List</legend>
-            <div>
-                <span>&#x2B1C;</span> <!-- Checked emoji -->
-                <label>Make a dollar on the internet</label>
-            </div>
-            <div>
-                <span>&#x2B1C;</span> <!-- Unchecked emoji -->
-                <label>Start a magazine for my friends</label>
-            </div>
-            <div>
-                <span>&#x2B1C;</span> <!-- Unchecked emoji -->
-                <label>Write one blog post a month</label>
-            </div>
-            <div>
-                <span>&#x2B1C;</span> <!-- Unchecked emoji -->
-                <label>Go snowboarding 5 times🤙</label>
-            </div>
-        </fieldset>
-    </div>
-</div>
+
 
 
 <h1> Useful Stuff I've collected. </h1>
