@@ -27,10 +27,10 @@
             console.error(error);
             return;
         }
-    
+        
         // Add pins to map
         pins.forEach(pin => {
-            L.marker([pin.point_x, pin.point_y]).addTo(mymap)
+            L.marker([pin.point_y, pin.point_x]).addTo(mymap)
                 .bindPopup(pin.title);
         });
     }
