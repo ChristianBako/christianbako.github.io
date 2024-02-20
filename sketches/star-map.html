@@ -20,7 +20,7 @@
     
     async function fetchPins() {
         let { data: pins, error } = await supabaseClient
-            .from('recme')
+            .from('recs')
             .select('*');
     
         if (error) {
