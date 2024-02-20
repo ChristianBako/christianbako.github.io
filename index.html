@@ -384,8 +384,7 @@ Have fun :)
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.min.js"></script>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <script>
-          var mymap = L.map('mapid').setView([37.77, -122.41], 13); // Set to your preferred default location and zoom level
-    
+          var mymap = L.map('mapid').setView([37.77, -98.41], 4); // center and pretty zoomed out so you can see the markers easily. 
         L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
         	minZoom: 0,
         	maxZoom: 20,
@@ -394,6 +393,7 @@ Have fun :)
         }).addTo(mymap);
     
          const supabaseUrl = 'https://yxvbasplevarpghdjbxw.supabase.co';
+        // This is the anon public key, don't be a dickhead. 
          const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4dmJhc3BsZXZhcnBnaGRqYnh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE5MzkwNjksImV4cCI6MTk4NzUxNTA2OX0.BhLLS5G7R5jda08fTNWEnTF9U9V55UMXS1MN4iAWbpA';
          const supabaseClient =  window.supabase.createClient(supabaseUrl, supabaseKey);
         
