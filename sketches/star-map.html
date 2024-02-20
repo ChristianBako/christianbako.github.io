@@ -6,6 +6,7 @@
 </head>
 <body>
     <div id="mapid" style="width: 600px; height: 400px;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/supabase.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
       var mymap = L.map('mapid').setView([51.505, -0.09], 13); // Set to your preferred default location and zoom level
@@ -13,6 +14,28 @@
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(mymap);
+     const supabaseUrl = 'https://yxvbasplevarpghdjbxw.supabase.co';
+     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4dmJhc3BsZXZhcnBnaGRqYnh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE5MzkwNjksImV4cCI6MTk4NzUxNTA2OX0.BhLLS5G7R5jda08fTNWEnTF9U9V55UMXS1MN4iAWbpA';
+     const supabase = createClient(supabaseUrl, supabaseKey);
+    
+    async function fetchPins() {
+        let { data: pins, error } = await supabase
+            .from('recme')
+            .select('*');
+    
+        if (error) {
+            console.error(error);
+            return;
+        }
+    
+        // Add pins to map
+        pins.forEach(pin => {
+            L.marker([pin.latitude, pin.longitude]).addTo(mymap)
+                .bindPopup(pin.title);
+        });
+    }
+    
+    fetchPins();
     </script>
 </body>
 </html>
