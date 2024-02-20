@@ -384,10 +384,16 @@ Have fun :)
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.min.js"></script>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <script>
-          var mymap = L.map('mapid').setView([37.77, -98.41], 4); // center and pretty zoomed out so you can see the markers easily. 
+        var mymap = L.map('mapid', {
+            center: [37.77, -98.41], // Center of the map
+            zoom: 4, // Initial zoom level
+            minZoom: 2, // Minimum zoom level
+            maxZoom: 16, // Maximum zoom level
+            maxBounds: L.latLngBounds(L.latLng(-80, -180), L.latLng(90, 180)), // Setting bounds directly
+            maxBoundsViscosity: 1.0 // Optional: Prevents users from panning outside the bounds
+        }).setView([37.77, -98.41], 4); // center and pretty zoomed out so you can see the markers easily. 
+            
         L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
-        	minZoom: 0,
-        	maxZoom: 20,
         	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         	ext: 'png'
         }).addTo(mymap);
