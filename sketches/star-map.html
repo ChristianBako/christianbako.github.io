@@ -30,7 +30,7 @@
     
         // Add pins to map
         pins.forEach(pin => {
-            L.marker([pin.latitude, pin.longitude]).addTo(mymap)
+            L.marker([pin.point_x, pin.point_y]).addTo(mymap)
                 .bindPopup(pin.title);
         });
     }
