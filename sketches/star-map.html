@@ -16,7 +16,7 @@
       }).addTo(mymap);
      const supabaseUrl = 'https://yxvbasplevarpghdjbxw.supabase.co';
      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4dmJhc3BsZXZhcnBnaGRqYnh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE5MzkwNjksImV4cCI6MTk4NzUxNTA2OX0.BhLLS5G7R5jda08fTNWEnTF9U9V55UMXS1MN4iAWbpA';
-     const supabase = createClient(supabaseUrl, supabaseKey);
+     const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);
     
     async function fetchPins() {
         let { data: pins, error } = await supabase
