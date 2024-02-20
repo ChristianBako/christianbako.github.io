@@ -117,6 +117,12 @@ Have fun :)
             display: flex;
         }
 
+        
+        .somethingCoolContainer {
+            justify-content: space-around;
+            display: flex;
+        }
+
         body {
             max-width: 100em;
             margin: auto;
@@ -199,6 +205,7 @@ Have fun :)
             100% { transform: translateY(-10px); }
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -333,30 +340,70 @@ Have fun :)
         </div>
     </div>
 </div>
+<div class="somethingCoolContainer">
+    <div class="lilPadding">
+        <h1> Useful Stuff I've collected. </h1>
+        <h2> Most important reads for software devs. </h2>
+        <p> In the course of my career these are the things I keep fruitlessly recommending people read.</p>
+        <ul>
+            <li><a href="https://grugbrain.dev">Grug Brained Dev</a></li>
+            <li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant </a></li>
+            <li><a href="https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf"> You and Your Research </a>
+            </li>
+            <li><a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"> Salary Negotiation: Make More Money, Be More
+                Valued. (By patio11)</a></li>
+            <li><a href="https://www.levels.fyi/">Levels</a> is the best salary comparison website</li>
+            <li><a href="https://www.mit.edu/~xela/tao.html">The Tao of Programming</a></li>
+            <li><a href="https://meaningness.com/geeks-mops-sociopaths">Geeks, MOPs, and sociopaths in subculture evolution</a>
+            </li>
+            <li><a href="https://youtu.be/OTCuYzAw31Y">Google I/O 2012 - The Art of Organizational Manipulation</a></li>
+            <li><a href="https://paulgraham.com/submarine.html">Paul Graham: The Submarine (it's about PR firms)</a></li>
+            <li><a href="https://sites.google.com/site/forgottenemployee/">Forgotten Employee</a></li>
+            <li><a href="https://cses.fi/book/book.pdf">Competative programmers handbook </a></li>
+            <li><a href="https://reactionwheel.net/2021/11/your-boards-of-directors-is-probably-going-to-fire-you.html">Your Board of Directors is Probably Going to Fire You
+            </a></li>
+        </ul>
+    </div>
+    <div class="lilPadding">
+        <div id="mapid" style="width: 600px; height: 400px;"></div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+          var mymap = L.map('mapid').setView([37.77, -122.41], 13); // Set to your preferred default location and zoom level
+    
+        L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+        	minZoom: 0,
+        	maxZoom: 20,
+        	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        	ext: 'png'
+        }).addTo(mymap);
+    
+         const supabaseUrl = 'https://yxvbasplevarpghdjbxw.supabase.co';
+         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4dmJhc3BsZXZhcnBnaGRqYnh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE5MzkwNjksImV4cCI6MTk4NzUxNTA2OX0.BhLLS5G7R5jda08fTNWEnTF9U9V55UMXS1MN4iAWbpA';
+         const supabaseClient =  window.supabase.createClient(supabaseUrl, supabaseKey);
+        
+        async function fetchPins() {
+            let { data: pins, error } = await supabaseClient
+                .from('recs')
+                .select('*');
+        
+            if (error) {
+                console.error(error);
+                return;
+            }
+            
+            // Add pins to map
+            pins.forEach(pin => {
+                L.marker([pin.point_y, pin.point_x]).addTo(mymap)
+                    .bindPopup(pin.title);
+            });
+        }
+        
+        fetchPins();
+        </script>
+    </div>
+</div>
 
-
-
-<h1> Useful Stuff I've collected. </h1>
-<h2> Most important reads for software devs. </h2>
-<p> In the course of my career these are the things I keep fruitlessly recommending people read.</p>
-<ul>
-    <li><a href="https://grugbrain.dev">Grug Brained Dev</a></li>
-    <li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant </a></li>
-    <li><a href="https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf"> You and Your Research </a>
-    </li>
-    <li><a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"> Salary Negotiation: Make More Money, Be More
-        Valued. (By patio11)</a></li>
-    <li><a href="https://www.levels.fyi/">Levels</a> is the best salary comparison website</li>
-    <li><a href="https://www.mit.edu/~xela/tao.html">The Tao of Programming</a></li>
-    <li><a href="https://meaningness.com/geeks-mops-sociopaths">Geeks, MOPs, and sociopaths in subculture evolution</a>
-    </li>
-    <li><a href="https://youtu.be/OTCuYzAw31Y">Google I/O 2012 - The Art of Organizational Manipulation</a></li>
-    <li><a href="https://paulgraham.com/submarine.html">Paul Graham: The Submarine (it's about PR firms)</a></li>
-    <li><a href="https://sites.google.com/site/forgottenemployee/">Forgotten Employee</a></li>
-    <li><a href="https://cses.fi/book/book.pdf">Competative programmers handbook </a></li>
-    <li><a href="https://reactionwheel.net/2021/11/your-boards-of-directors-is-probably-going-to-fire-you.html">Your Board of Directors is Probably Going to Fire You
-</a></li>
-</ul>
 <div class="resourcesContainer">
 
     <div>
