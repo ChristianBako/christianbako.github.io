@@ -53,127 +53,220 @@ Ah nice you've found my little hidden comment.
 @%%%%%%%%#%%#####################################################******#####**####################################################%%%@
 
 Have fun :) 
---> 
+-->
 <head>
-  <script>
-    // Immediately set the initial theme to reduce white flash
-    (function() {
-      const darkMode = localStorage.getItem('darkMode') === 'true';
-      const className = darkMode ? 'darkMode' : 'lightMode';
-      document.documentElement.classList.add(className);
-      document.documentElement.classList.add('enable-transitions');
-    })();
-  </script>
+    <script>
+        // Immediately set the initial theme to reduce white flash
+        (function () {
+            const darkMode = localStorage.getItem('darkMode') === 'true';
+            const className = darkMode ? 'darkMode' : 'lightMode';
+            document.documentElement.classList.add(className);
+        })();
+    </script>
 
-  <title>
-    My Small Ecofriendly Blog
-  </title>
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+    <title>
+        My Small Ecofriendly Blog
+    </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat");
+        /* Style the popup background */
+        .leaflet-popup-content-wrapper { 
+            background: #333 !important; /* Dark background */
+        }
+        
+        /* Style the popup tip */
+        .leaflet-popup-tip {
+            background: #333 !important;
+        }
+        
+        .enable-transitions {
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-    @media (max-width: 1000px) {
-      .profilePhoto {
-        display: none;
-      }
-    }
+        .subscribeForm {
+            background: whitesmoke;
+            color: black;
+        }
 
-    .enable-transitions {
-      transition: background-color 0.3s, color 0.3s;
-    }
+        .lightMode {
+            background: cornflowerblue;
+        }
 
-    .subscribeForm {
-      background: whitesmoke;
-      color: black;
-    }
+        .darkMode {
+            background: black;
+        }
 
-    .lightMode {
-      background: cornflowerblue;
-    }
+        * {
+            font-family: 'Montserrat', sans-serif;
+            color: whitesmoke;
+        }
 
-    .darkMode {
-      background: #233e6f;
-    }
+        .lilPadding {
+            padding: .5em
+        }
 
-    * {
-       font-family: 'Montserrat', sans-serif;
-       color: whitesmoke;
-    }
+        .profilePhoto {
+            max-height: 90%;
+            max-width: 20%;
+            border-radius: 20%;
+        }
 
-    .lilPadding {
-      padding: .5em
-    }
+        .aboutContainer {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-    .profilePhoto {
-      max-height: 90%;
-      max-width: 20%;
-      border-radius: 20%;
-    }
+        .creationsContainer {
+            justify-content: space-around;
+            display: flex;
+        }
 
-    .aboutContainer {
-      display: flex;
-    }
-    
-    .creationsContainer {
-      justify-content: space-around;
-      display: flex;
-    }
-      
-    body {
-      max-width: 60em;
-      margin: auto;
-      transition: all 2s;
-    }
+        .resourcesContainer {
+            justify-content: space-around;
+            display: flex;
+            padding: 0.5em;
+        }
 
-    a {
-      color: whitesmoke;
-      font-style: italic;
-      text-decoration: none;
-    }
+        
+        .somethingCoolContainer {
+            justify-content: space-around;
+            display: flex;
+        }
 
-    a:hover {
-      color: lightblue;
-    }
+        body {
+            max-width: 100em;
+            margin: auto;
+            transition: all 2s;
+        }
 
-    button {
-      background: whitesmoke;
-      color: black;
-    }
-  </style>
-  
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <meta property="og:title" content="Chris's Small EcoFriendly Blog" />
-  <meta property="og:description" content="Why are you sharing my blog? lol" />
-  <meta property="og:url" content="https://www.chrisbako.com/" />
-  <meta property="og:image" content="https://chrisbako.com/media/profile_photo.PNG" />
+        a {
+            color: whitesmoke;
+            font-style: italic;
+            text-decoration: none;
+        }
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+        a:hover {
+            color: lightblue;
+        }
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLW7M5WWY0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-ZLW7M5WWY0');
-  </script>
+        button {
+            background: whitesmoke;
+            color: black;
+        }
+
+        /* specificity is dumb */
+        @media (max-width: 1000px) {
+            .profilePhoto {
+                display: none;
+            }
+
+            .aboutContainer {
+                display : inline;
+            }
+
+            .creationsContainer {
+                display : inline; 
+            }
+
+            .resourcesContainer {
+                display : inline;
+            }
+
+                    
+            .somethingCoolContainer {
+                display : inline;
+            }
+        }
+        /* bonfire.css a little thing GPT and I cooked up to make transitioning between dark and light mode more delightful. */
+        .bonfire {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+        }
+        
+        .flame {
+            position: absolute;
+            bottom: 40px;
+            width: 30px;
+            height: 60px;
+            background: white;
+            border-radius: 50px;
+            animation: flicker 0.2s infinite alternate;
+        }
+        
+        .flame:nth-child(2) {
+            left: 20px;
+            animation-delay: 0.1s;
+            background: cornflowerblue;
+        }
+        
+        .flame:nth-child(3) {
+            left: 40px;
+            background: white;
+        }
+        
+        .logs {
+            position: absolute;
+            bottom: 0;
+            width: 100px;
+            height: 40px;
+            background: white;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        @keyframes flicker {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Chris's Small EcoFriendly Blog"/>
+    <meta property="og:description" content="Why are you sharing my blog? lol"/>
+    <meta property="og:url" content="https://www.chrisbako.com/"/>
+    <meta property="og:image" content="http://chrisbako.com/media/profile_photo.PNG"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLW7M5WWY0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZLW7M5WWY0');
+    </script>
 </head>
-<body>
-  <div class="lilPadding">
+<body x-init="$nextTick(() => {document.documentElement.classList.add('enable-transitions');})">
+<div class="lilPadding">
     <div style="display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;">
         <h1>
-          Hi! I'm Chris           
+            Hi! I'm Chris
         </h1>
-      <div x-data="{
+                    
+        <div class="bonfire">
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="flame"></div>
+                <div class="logs"></div>
+          </div>
+        <div x-data="{
       darkMode: localStorage.getItem('darkMode') === 'true',
       // Javascript is epic.
               toggleMode() {
@@ -187,111 +280,268 @@ Have fun :)
                   docClasses.toggle('darkMode', this.darkMode);
               }
             }">
-        <button x-on:click="toggleMode()" x-text="darkMode ? 'Light Mode' : 'Dark Mode'"></button>
-      </div>
-      </div>
+
+            <button x-on:click="toggleMode()" x-text="darkMode ? 'Light Mode' : 'Dark Mode'"></button>
+        </div>
     </div>
-    <div class="aboutContainer"> 
-      <img class="profilePhoto lilPadding" src="https://chrisbako.com/media/profile_photo.PNG" alt="My sexy profile photo"> 
-      <div class="lilPadding"> 
-        <p> Just a simple software engineer in San Francisco. </p>
-        <p> I've worked on <a href="https://www.linkedin.com/in/chrisby/">Linkedin's</a> infra, Amazon Alexa, and SIG on tools for sysadmins/doing devopsy sysadminny stuff.</p>
-        <p> I'm interested in software engineering, computer science, economnics, art and really anything else you might be interested in.</p>
-        <p> hmu on <a href="https://twitter.com/BakoTac0">twitter/X</a> if you wanna chat! If you're excited about something, or know a lot no matter how niche I'd love to hear it.</p>
-        <p> I do photography, ride motorcycles, play games, shred, and read too much in my spare time. </p>
-      </div>
+</div>
+<div class="aboutContainer">
+    <img class="profilePhoto" src="https://chrisbako.com/media/profile_photo.PNG"
+         alt="My sexy profile photo">
+    <div class="lilPadding">
+        <div>
+            <p> Just a simple software engineer in San Francisco. </p>
+            <p> I've worked on <a href="https://www.linkedin.com/in/chrisby/">Linkedin's</a> infra, Amazon Alexa, and SIG on
+                tools for sysadmins/doing devopsy sysadminny stuff.</p>
+            <p> I'm interested in software engineering, computer science, economnics, art and really anything else you might
+                be interested in.</p>
+            <p> hmu on <a href="https://twitter.com/BakoTac0">twitter/X</a> if you wanna chat! If you're excited about
+                something, or know a lot no matter how niche I'd love to hear it.</p>
+            <p> I do photography, ride motorcycles, play games, shred, and read too much in my spare time. </p>
+        </div>
+        <div class="creationsContainer">
+            <div class="lilPadding">
+                <h2> Posts that are too long for Twitter</h2>
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <h3>Subscribe!</h3>
+                <form
+                        action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
+                        method="post"
+                        target="popupwindow"
+                        onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
+                        class="embeddable-buttondown-form"
+                >
+                    <label for="bd-email">Enter your email:</label>
+                    <input class="subscribeForm" type="email" name="email" id="bd-email"/>
+                    <input class="subscribeForm" type="submit" value="Subscribe"/>
+                    <p>
+                        <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
+                    </p>
+                </form>
+            </div>
+            <div class="lilPadding">
+                <h2>Things I've built</h2>
+                <ul>
+                    <li> This website!</li>
+                </ul>
+            <h2>Things I want</h2>
+            <p> If you have these get in touch :)</p>
+            <ul>
+                <li>
+                    Facebook's Red Book
+                </li>
+                <li>
+                    Grace hopper's nanosecond
+                </li>
+            </ul>
+        </div>
+         <div class="lilPadding" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;">
+               <fieldset>
+                    <legend>2024 Goal List</legend>
+                    <div>
+                        <span>⬜</span> <!-- Checked emoji -->
+                        <label>Make a dollar on the internet</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> <!-- Unchecked emoji -->
+                        <label>Start a magazine for my friends</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> <!-- Unchecked emoji -->
+                        <label>Write one blog post a month</label>
+                    </div>
+                    <div>
+                        <span>✅</span> <!-- Unchecked emoji -->
+                        <label>Go snowboarding 5 times🤙</label>
+                    </div>
+               </fieldset>
+     
+                <fieldset>
+                    <legend>Weekly gym tracker</legend>
+                    <div>
+                        <span>⬜</span> 
+                        <label>Monday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> 
+                        <label>Tuesday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> 
+                        <label>Wednesday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> 
+                        <label>Thursday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span> 
+                        <label>Friday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span>
+                        <label>Saturday</label>
+                    </div>
+                    <div>
+                        <span>⬜</span>
+                        <label>Sunday</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </div>
-    <div class="creationsContainer">
-      <div class="lilPadding">
-        <h2> Posts that are too long for Twitter</h2>
+</div>
+<div class="somethingCoolContainer">
+    <div class="lilPadding">
+        <h1> Useful Stuff I've collected. </h1>
+        <h2> Most important reads for software devs. </h2>
+        <p> In the course of my career these are the things I keep fruitlessly recommending people read.</p>
         <ul>
-          {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
+            <li><a href="https://grugbrain.dev">Grug Brained Dev</a></li>
+            <li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant </a></li>
+            <li><a href="https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf"> You and Your Research </a>
+            </li>
+            <li><a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"> Salary Negotiation: Make More Money, Be More
+                Valued. (By patio11)</a></li>
+            <li><a href="https://www.levels.fyi/">Levels</a> is the best salary comparison website</li>
+            <li><a href="https://www.mit.edu/~xela/tao.html">The Tao of Programming</a></li>
+            <li><a href="https://meaningness.com/geeks-mops-sociopaths">Geeks, MOPs, and sociopaths in subculture evolution</a>
+            </li>
+            <li><a href="https://youtu.be/OTCuYzAw31Y">Google I/O 2012 - The Art of Organizational Manipulation</a></li>
+            <li><a href="https://paulgraham.com/submarine.html">Paul Graham: The Submarine (it's about PR firms)</a></li>
+            <li><a href="https://sites.google.com/site/forgottenemployee/">Forgotten Employee</a></li>
+            <li><a href="https://cses.fi/book/book.pdf">Competative programmers handbook </a></li>
+            <li><a href="https://reactionwheel.net/2021/11/your-boards-of-directors-is-probably-going-to-fire-you.html">Your Board of Directors is Probably Going to Fire You</a></li>
+            <li><a href="https://techcrunch.com/2014/04/14/sf-housing/">How Burrowing Owls Lead To Vomiting Anarchists (Or SF’s Housing Crisis Explained)</a></li>
         </ul>
-        <h3>Subscribe!</h3>
-        <form
-          action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
-          method="post"
-          target="popupwindow"
-          onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
-          class="embeddable-buttondown-form"
-        >
-        <label for="bd-email">Enter your email:</label>
-        <input class="subscribeForm" type="email" name="email" id="bd-email" />
-        <input class="subscribeForm" type="submit" value="Subscribe" />
-        <p>
-          <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
-        </p>
-      </form>
     </div>
     <div class="lilPadding">
-          <h2>Things I've built</h2>
-          <ul>
-            <li> This website! </li>
-          </ul>
+        <h1> My Map of Interesting Places</h1>
+        <div id="mapid" style="width: 600px; height: 400px;"></div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.7/dist/umd/supabase.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+        var mymap = L.map('mapid', {
+            center: [37.77, -98.41], // Center of the map
+            zoom: 4, // Initial zoom level
+            minZoom: 2, // Minimum zoom level
+            maxZoom: 16, // Maximum zoom level
+            maxBounds: L.latLngBounds(L.latLng(-80, -180), L.latLng(90, 180)), // Setting bounds directly
+            maxBoundsViscosity: 1.0 // Optional: Prevents users from panning outside the bounds
+        }).setView([37.77, -98.41], 4); // center and pretty zoomed out so you can see the markers easily. 
+            
+        L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+        	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        	ext: 'png'
+        }).addTo(mymap);
+    
+         const supabaseUrl = 'https://yxvbasplevarpghdjbxw.supabase.co';
+        // This is the anon public key, don't be a dickhead. 
+         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4dmJhc3BsZXZhcnBnaGRqYnh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE5MzkwNjksImV4cCI6MTk4NzUxNTA2OX0.BhLLS5G7R5jda08fTNWEnTF9U9V55UMXS1MN4iAWbpA';
+         const supabaseClient =  window.supabase.createClient(supabaseUrl, supabaseKey);
+        
+        async function fetchPins() {
+            let { data: pins, error } = await supabaseClient
+                .from('recs')
+                .select('*');
+        
+            if (error) {
+                console.error(error);
+                return;
+            }
+            
+            // Add pins to map
+            pins.forEach(pin => {
+                L.marker([pin.point_y, pin.point_x]).addTo(mymap)
+                    .bindPopup(pin.title);
+            });
+        }
+        
+        fetchPins();
+        </script>
     </div>
-  </div>
-  
-  <h1> Useful Stuff I've collected. </h1>
-  <h2> Most important reads for software devs. </h2>
-  <p> In the course of my career this are the things I keep fruitlessly recommending people read.</p>
-  <ul>
-    <li><a href="https://grugbrain.dev">Grug Brained Dev</a></li>
-    <li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant </a></li>
-    <li><a href="https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf"> You and Your Research </a></li>
-    <li><a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"> Salary Negotiation: Make More Money, Be More Valued. (By patio11)</a></li>
-    <li><a href="https://www.levels.fyi/">Levels</a> is the best salary comparison website</li>
-    <li><a href="https://www.mit.edu/~xela/tao.html">The Tao of Programming</a></li>
-    <li><a href="https://meaningness.com/geeks-mops-sociopaths">Geeks, MOPs, and sociopaths in subculture evolution</a></li>
-  </ul>
-  <h2>API Design Resources</h2>
-  <p>Api design is half dark art, these should help get you on your way.</p>
-  <ul>
-    <li><a href="https://slack.engineering/how-we-design-our-apis-at-slack/">Slack API Design Guide</a></li>
-    <li><a href="https://cloud.google.com/apis/design">Google Cloud API Design Guide </a></li>
-    <li><a href="https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design">Azure API Design Guide</a></li>
-  </ul>
-    <h2> Favorite tools </h2>
-    <h3> Browsers</h3>
-    <p> There are a bunch of interesting browser projects recently. More interesting than Chrome or Firefox. :)</p>
-    <ul>
-      <li> <a href="https://arc.net/">Arc Browser</a> is the one I currently use.</li>
-      <li> <a href="https://github.com/bonsai-desk/bonsai-browser">Bonsai Browser </a> really enjoyed this project but it got killed off.</li>                                                                     
-    </ul>
-    <h3> Notetaking </h3>
-    <ul>
-      <li><a href="https://obsidian.md/"> Obsidian </a></li>
-    </ul>
-    <h3>Vim Resources</h3>
-    <p>
-      I've vimified like 90% of my workflows. Worth learning just for the fun of it, but it does have a high learning curve.
-    </p>
-    <ul>
-      <li><a href="https://vim-adventures.com/"> Vim Adventures </a></li>
-      <li><a href="https://teachyourselfcs.com/"> Self taught CS resources. Read these books. </a></li>
-    </ul>
-    <h2> Lectures and courses </h2>
-    <h3> AI </h3>
-    <ul>
-      <li><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g"> Intro to Large Language Models </a> by Andrej Karpathy (worked at OpenAI, Tesla AI, etc.)</li>
-    </ul>
-    <h3> Programming Languages </h3>
-    <ul>
-      <li><a href="https://brandonspark.github.io/150/"> functional programming course from CMU </a></li>
-    </ul>
-    <h2>Economics/Investing</h2>
-    <h3>Beginner friendly resources</h3>
-    <ul>
-      <li><a href="https://youtu.be/PHe0bXAIuk0?si=WhWumT5rT-cyJQIS"> Ray Dalio's explaination of how the economy works</a></li>
-      <li><a href="https://youtu.be/rf_f8GV0yYM?si=Gl83VsiicAwXSZAP"> Peter Lynch lecture on investing</a></li>
-      <li><a href="https://youtu.be/VI_riscmviI?si=fYfzNocF7lYJHOTE"> Intor to finance by Martin Shkreli</a> his valuing things from scratch series is pretty good too.</li>
-      <li><a href="https://a.co/d/hJGRXZj"> Market Wizards + Unknown Market Wizards </a></li>
-      <li><a href="https://www.bitsaboutmoney.com/"> Bits about money </a></li>
-      <li><a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Everything Matt Levine Writes</a></li>
-    </ul>
-  </div>
+</div>
 
+<div class="resourcesContainer">
+    <div>
+        <h2> Favorite tools </h2>
+        <h3> Browsers</h3>
+        <p> There are a bunch of interesting browser projects recently. More interesting than Chrome or Firefox. :)</p>
+        <ul>
+            <li><a href="https://arc.net/">Arc Browser</a> is the one I currently use.</li>
+            <li><a href="https://github.com/bonsai-desk/bonsai-browser">Bonsai Browser </a> really enjoyed this project
+                but it
+                got killed off.
+            </li>
+        </ul>
+        <h3> Notetaking </h3>
+        <ul>
+            <li><a href="https://obsidian.md/"> Obsidian </a></li>
+        </ul>
+        <h3>Vim Resources</h3>
+        <p>
+            I've vimified like 90% of my workflows. Worth learning just for the fun of it, but it does have a high
+            learning
+            curve.
+        </p>
+        <ul>
+            <li><a href="https://vim-adventures.com/"> Vim Adventures </a></li>
+            <li><a href="https://teachyourselfcs.com/"> Self taught CS resources. Read these books. </a></li>
+        </ul>
+    </div>
+    <div>
+        <h2> Lectures and courses </h2>
+        <h3> AI </h3>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g"> Intro to Large Language Models </a> by Andrej
+                Karpathy
+                (worked at OpenAI, Tesla AI, etc.)
+            </li>
+            <li><a href="https://www.buzzfeednews.com/article/tedchiang/the-real-danger-to-civilization-isnt-ai-its-runaway#.vp1ylDRDR">Silicon Valley Is Turning Into Its Own Worst Fear</a></li>
+        </ul>
+        <h3> Security + Hacker Culture </h3>
+        <ul>
+            <li><a href="https://darknetdiaries.com/transcript/45/"> EP 45: XBOX UNDERGROUND (PART 1) </a></li>
+            <li><a href="https://youtu.be/OAI8S2houW4"> DEFCON 18: Pwned By The Owner: What Happens When You Steal a Hackers Computer</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Hackers_(film)"> Hackers (film)</a></li>
+        </ul>
+        <h3> Programming Languages </h3>
+        <ul>
+            <li><a href="https://brandonspark.github.io/150/"> functional programming course from CMU </a></li>
+        </ul>
+    </div>
+    <div>
+        <h2> Good Reads </h2>
+        <h3> Favorite Books/Essays/Articles </h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Snow_Crash"> Snow Crash </a></li>
+            <li><a herf="https://harpers.org/wp-content/uploads/2008/09/HarpersMagazine-1996-01-0007859.pdf">On the (nearly lethal) comforts of a luxury cruise</a></li>
+            <li><a href="https://www.newyorker.com/magazine/1940/04/13/the-old-house-at-home">The old house at home</a></li>
+        </ul>
+        <h3>Economics/Investing</h2>
+        <h4>Beginner friendly resources</h3>
+        <ul>
+            <li><a href="https://youtu.be/PHe0bXAIuk0?si=WhWumT5rT-cyJQIS"> Ray Dalio's explaination of how the economy
+                works</a></li>
+            <li><a href="https://youtu.be/rf_f8GV0yYM?si=Gl83VsiicAwXSZAP"> Peter Lynch lecture on investing</a></li>
+            <li><a href="https://youtu.be/VI_riscmviI?si=fYfzNocF7lYJHOTE"> Intor to finance by Martin Shkreli</a> his
+                valuing
+                things from scratch series is pretty good too.
+            </li>
+            <li><a href="https://a.co/d/hJGRXZj"> Market Wizards + Unknown Market Wizards </a></li>
+            <li><a href="https://www.bitsaboutmoney.com/"> Bits about money </a></li>
+            <li><a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Everything Matt Levine
+                Writes</a></li>
+        </ul>
+    </div>
+</div>
 </body>
