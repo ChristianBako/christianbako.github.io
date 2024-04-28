@@ -3,3 +3,6 @@ plugins:
 title: Chris's Small Ecofriendly Blog
 description: An exciting website!
 author: Chris Bakopoulos
+collections:
+  photography:
+    output: true
