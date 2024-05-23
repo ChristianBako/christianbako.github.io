@@ -2,7 +2,9 @@
 layout: post
 title:  "Becoming a Founding Engineer is a Bad Deal"
 ---
-All Content + """thought leadership"""[^1] is advertising. The naive public internet is over. Every agent posting things on the massive platforms you're likely to see them is jockeying for your attention for some downstream economic effect.[^2] This is doubly true when someone has a direct financial interest in getting you to believe what they're saying. The only line between that and gas lighting is that often the venture capital class believes what they're saying.[^3]
+All Content + """thought leadership"""[^1] is advertising. 
+
+The naive public internet is over. Every agent posting things on the massive platforms you're likely to see them is jockeying for your attention for some downstream economic effect.[^2] This is doubly true when someone has a direct financial interest in getting you to believe what they're saying. The only line between that and gas lighting is that often the venture capital class believes what they're saying.[^3]
 
 Speaking of people who have a financial incentive to have you believe what they're saying, let's talk about Founders! 
 
@@ -102,8 +104,8 @@ You're blowing your lottery tickets so someone else can win the jackpot.
 
 ***
 Footnotes
-[^1] Thought leadership is just what fake and real CEOs call their influencer careers to distance themselves from people who hawk supplements and energy drinks to people who sit in chairs 90% of the day.
-[^2] Or they're an idiot, like most of Reddit 
-[^2] Because the loudest ones, generally, have no idea what they're talking about
-[^3]  Who will go to the fifth investor dinner to try to convince someone to gamble on your organic SaaS powered dog treats company?
+[^1]: Thought leadership is just what fake and real CEOs call their influencer careers to distance themselves from people who hawk supplements and energy drinks to people who sit in chairs 90% of the day.
+[^2]: Or they're an idiot, like most of Reddit 
+[^2]: Because the loudest ones, generally, have no idea what they're talking about
+[^3]: Who will go to the fifth investor dinner to try to convince someone to gamble on your organic SaaS powered dog treats company?
 []That said if you're that low conviction about the startup where you work where a random article convinces you to leave, you should've quit a while ago and enjoyed more time on vacation.
