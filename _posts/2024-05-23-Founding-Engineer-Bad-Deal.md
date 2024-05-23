@@ -105,7 +105,6 @@ You're blowing your lottery tickets so someone else can win the jackpot.
 ***
 Footnotes
 [^1]: Thought leadership is just what fake and real CEOs call their influencer careers to distance themselves from people who hawk supplements and energy drinks to people who sit in chairs 90% of the day.
-[^2]: Or they're an idiot, like most of Reddit 
-[^2]: Because the loudest ones, generally, have no idea what they're talking about
+[^2]: Or they're an idiot, like most of Reddit. + Because the loudest ones, generally, have no idea what they're talking about
 [^3]: Who will go to the fifth investor dinner to try to convince someone to gamble on your organic SaaS powered dog treats company?
 []That said if you're that low conviction about the startup where you work where a random article convinces you to leave, you should've quit a while ago and enjoyed more time on vacation.
