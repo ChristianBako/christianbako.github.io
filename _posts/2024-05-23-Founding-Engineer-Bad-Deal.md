@@ -8,7 +8,7 @@ The naive public internet is over. Every agent posting things on the massive pla
 
 Speaking of people who have a financial incentive to have you believe what they're saying, let's talk about Founders! 
 
-The intrepid weirdly thin skinned class of Entrepreneurs that bring us things like Airbnb, Juciero and the worlds 5th GPT wrapper app. Our wunderkin can't do all the work themselves though, they need someone to do lots of the foundational work required to get something from the MVP stage to the MLP stage and beyond.[^1]
+The intrepid weirdly thin skinned class of Entrepreneurs that bring us things like Airbnb, Juciero and the worlds 5th GPT wrapper app. Our wunderkin can't do all the work themselves though, they need someone to do lots of the foundational work required to get something from the MVP stage to the MLP stage and beyond.
 
 Those people can't be blessed with the founder title though, that would entitle them to double digit equity. Yet a new founder can't pay enough to compete with other startups let alone FAANG companies. 
 
@@ -65,7 +65,7 @@ There's a lot of talk in
 ## Founder case
 
 # Conclusion
-I understand this sounds like I'm looking at every 18-25 year old in tech and telling them that, "Hey you should put on pants and get a real job at Meta", I'm not.
+I understand this sounds like I'm looking at every 18-25 year old in tech and telling them that, "Hey you should put on pants and get a real job at Meta", I'm not.[^4]
 
 I like startups and personally I'd like to found one. They're the growth engine that powers SV, the United States, and the world. 
 
@@ -103,8 +103,8 @@ You're blowing your lottery tickets so someone else can win the jackpot.
 -Chris
 
 ***
-Footnotes
+Footnotes: 
 [^1]: Thought leadership is just what fake and real CEOs call their influencer careers to distance themselves from people who hawk supplements and energy drinks to people who sit in chairs 90% of the day.
-[^2]: Or they're an idiot, like most of Reddit. + Because the loudest ones, generally, have no idea what they're talking about
+[^2]: Or they're an idiot, like most of Reddit. Because the loudest ones, generally, have no idea what they're talking about
 [^3]: Who will go to the fifth investor dinner to try to convince someone to gamble on your organic SaaS powered dog treats company?
-[]That said if you're that low conviction about the startup where you work where a random article convinces you to leave, you should've quit a while ago and enjoyed more time on vacation.
+[^4]: That said if you're that low conviction about the startup where you work where a random article convinces you to leave, you should've quit a while ago and enjoyed more time on vacation.
