@@ -366,35 +366,12 @@ Have fun :)
                </fieldset>
      
                 <fieldset>
-                    <legend>Weekly gym tracker</legend>
+                    <legend>Photography Journal</legend>
+                    {% for post in site.photography %}
                     <div>
-                        <span>⬜</span> 
-                        <label>Monday</label>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
                     </div>
-                    <div>
-                        <span>⬜</span> 
-                        <label>Tuesday</label>
-                    </div>
-                    <div>
-                        <span>⬜</span> 
-                        <label>Wednesday</label>
-                    </div>
-                    <div>
-                        <span>⬜</span> 
-                        <label>Thursday</label>
-                    </div>
-                    <div>
-                        <span>⬜</span> 
-                        <label>Friday</label>
-                    </div>
-                    <div>
-                        <span>⬜</span>
-                        <label>Saturday</label>
-                    </div>
-                    <div>
-                        <span>⬜</span>
-                        <label>Sunday</label>
-                    </div>
+                    {% endfor %}
                 </fieldset>
             </div>
         </div>
@@ -422,6 +399,7 @@ Have fun :)
             <li><a href="https://cses.fi/book/book.pdf">Competative programmers handbook </a></li>
             <li><a href="https://reactionwheel.net/2021/11/your-boards-of-directors-is-probably-going-to-fire-you.html">Your Board of Directors is Probably Going to Fire You</a></li>
             <li><a href="https://techcrunch.com/2014/04/14/sf-housing/">How Burrowing Owls Lead To Vomiting Anarchists (Or SF’s Housing Crisis Explained)</a></li>
+            <li><a href="https://stackoverflow.com/questions/130794/what-is-dependency-injection">Stack Overflow: What is dependency injection?</a></li>
         </ul>
     </div>
     <div class="lilPadding">
