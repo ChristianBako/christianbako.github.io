@@ -6,9 +6,9 @@ Welcome!
 
 Software engineering is new.
 
-Every other professional and academic field, from Civil Engineering to Prostitution, has been around for tens of thousands of years by some name or another.
+Every other professional and academic field, from Civil Engineering to prostitution, has been around for tens of thousands of years by some name or another.
 
-As a field, Computer Science is less than a hundred years old. Software Engineering as a profession less than 60. Almost every piece of software that exists was written by someone still alive today.
+As a field, Computer Science is less than a hundred years old. Software Engineering as a profession less than 60. Almost every piece of software was written by someone still alive today.
 
 Now that includes you.
 
