@@ -20,7 +20,7 @@ Your hands now embued with the incredible power to create. One day those creatio
 
 You'll have many jobs, but this is your one craft. You'll use the skills that you're accumulating over for at least forty more years. Slow down and fully understand the problems you encounter, there's plenty of time.
 
-Practicing our craft just for big money, your parents respect, or because society told you so is a bad reason. Starting a company just for those reasons is ten times worse. Fundamentally our day to day is creative writing, and just like other creative professions we need that spark to keep going.
+Practicing our craft just for big money, your parents respect, or because society told you so is a bad idea. Starting a company just for those reasons is ten times worse. Fundamentally our day to day is creative writing, and just like other creative professions we need that spark to keep going.
 
 You'll meet people who trudge through regardless. They are miserable or sociopathic. Sometimes both.
 
