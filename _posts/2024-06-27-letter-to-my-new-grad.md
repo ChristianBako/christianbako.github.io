@@ -46,7 +46,7 @@ Have backbone, and self respect. If something is wrong say so. Do not be intimid
 
 Still, make an effort to be nice to your coworkers. It's free and we're all only human. Software Engineering is a team sport, you can't do it alone. Don't become the person who constantly complains publicly about how hard things are, or how bad management is. Show leadership, keep things moving forward, complaints don't help.
 
-A little maturity goes a long way in this industry. No matter how technically adept you will become there's always something new to learn from someone. Decisively take accountability for your fuck ups. Everyone makes them. Blame games just waste time the could be spent fixing it.
+A little maturity goes a long way in this industry. No matter how technically adept you are there's always something new to learn from someone. No matter how high up the social-capital hierarchy you climb everyone from CEO to Janitor is treated with the same respect. There are no untouchables here, in order for any organization of people to run everyone needs to do their jobs. No tech company would survive for 24 hours without someone cleaning the toilets. Decisively take accountability for your fuck ups. Everyone makes them. Blame games just waste time the could be spent fixing it.
 
 You can make a million dollars a year and still sit alone in your big empty house because no one wants to talk to you outside of a professional context.
 
