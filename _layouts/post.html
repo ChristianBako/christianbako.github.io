@@ -4,8 +4,8 @@
 <script>
         // Immediately set the initial theme to reduce white flash
         (function () {
-            const darkMode = localStorage.getItem('darkMode') === 'true';
-            const className = darkMode ? 'darkMode' : 'lightMode';
+            const darkMode = localStorage.getItem('darkMode');
+            const className = (darkMode === null) ? 'darkMode' : (darkMode === 'true' ? 'darkMode' : 'lightMode');
             document.documentElement.classList.add(className);
         })();
     </script>
