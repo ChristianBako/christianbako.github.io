@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Specific Purpose Machine 1: Capslock is Actually Great
+title: Specific Purpose Machine 1 - Capslock is Actually Great
 ---
 
 # Overview
