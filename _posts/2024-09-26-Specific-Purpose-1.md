@@ -2,6 +2,7 @@
 layout: post
 title: Specific Purpose Machine 1: Capslock is Actually Great
 ---
+
 # Overview
 Modern computers are designed as general purpose machines meant for everyone from engineers building spaceships to literal babies watching Youtube.
 
