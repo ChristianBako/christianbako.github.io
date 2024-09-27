@@ -3,7 +3,7 @@ layout: post
 title: Specific Purpose Machine 1 - Capslock is Actually Great
 ---
 
-# Overview
+# Specific Purpose Machines
 Modern computers are designed as general purpose machines meant for everyone from engineers building spaceships to literal babies watching Youtube.
 
 You're not everyone.
@@ -39,7 +39,7 @@ You paid for the whole keyboard after all!
 
 \- [Saving Lives](https://www.folklore.org/Saving_Lives.html)
 
-Mac's exploding view is the worst way to find a given window if you're a power user. The ordering of windows changes every time you swtich apps so you can't create muscle memory.
+Mac's exploding view is the worst way to find a given window. The ordering of windows changes every time you swtich apps so you can't create muscle memory.
 
 The visual effort of finding that window interrupts your train of thought and takes seconds to find another window. Every second you spend seeking adds up over time.
 
@@ -60,7 +60,8 @@ It's free and the easiest way to get the behavior we're looking for. There are s
 
 Setup shortcuts using the remapped CapsLock key by going to RayCast command line -> Extensions and use the Hotkeys field for your desired apps.
 
-I recommend using CapsLock mapped to Control and Command to establish a new key that is approximate to the <Leader> key in Vim. 
+I recommend using CapsLock mapped to Control and Command to establish a new key that is approximate to the Leader key in Vim.
+
 This combination of keys allows you to easily press CapsLock with your pinky and then command with your thumb.
 
 Think of it as a keyboard namespace to put all your personal shortcuts under. 
