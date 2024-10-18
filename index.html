@@ -254,7 +254,10 @@ Have fun :)
         gtag('config', 'G-ZLW7M5WWY0');
     </script>
 </head>
+<!-- Remove this for now 
 <body x-init="$nextTick(() => {document.documentElement.classList.add('enable-transitions');})">
+-->
+<body>
 <div class="lilPadding">
     <div style="display: flex;
         justify-content: space-between;
@@ -270,22 +273,6 @@ Have fun :)
                 <div class="flame"></div>
                 <div class="logs"></div>
           </div>
-        <div x-data="{
-      darkMode: localStorage.getItem('darkMode') === 'true',
-      // Javascript is epic.
-              toggleMode() {
-                  this.darkMode = !this.darkMode;
-                  localStorage.setItem('darkMode', this.darkMode);
-                  this.applyTheme();
-              },
-              applyTheme() {
-                  const docClasses = document.documentElement.classList;
-                  docClasses.toggle('lightMode', !this.darkMode);
-                  docClasses.toggle('darkMode', this.darkMode);
-              }
-            }">
-
-            <button x-on:click="toggleMode()" x-text="darkMode ? 'Light Mode' : 'Dark Mode'"></button>
         </div>
     </div>
 </div>
