@@ -1,4 +1,7 @@
-# Five weeks
+---
+layout: post
+title: Five weeks
+---
 
 It's been an interesting five weeks huh.
 
