@@ -40,6 +40,7 @@ This calculation is only for physical exports. It misses tiny details like servi
 Trump personally picked this formula and I assume that's just because you get bigger numbers out of it than others.
 
 Here's a chart from some major economies that matter from JPMC. These just include additional Liberation Day tariffs, not the already high tariffs from the previous Trump and Biden admins. 
+
 ![Pasted image 20250409010401](https://github.com/user-attachments/assets/06453e3c-6d36-4ea0-980c-978969e61032)
 
 Trade deficits are perhaps one of the dumbest ways to calculate tariff rates.
@@ -47,6 +48,7 @@ Trade deficits are perhaps one of the dumbest ways to calculate tariff rates.
 For example, Lesotho, a poor African country has the highest tariff rate. They trade ~250M worth of diamonds and denim to the US and buy almost nothing from us.
 
 If you're wondering why that is, here's a street view from their capital to a 3 star hotel recommended by Google.
+
 <img width="1701" alt="Screenshot 2025-04-08 at 9 17 19 PM" src="https://github.com/user-attachments/assets/4b38e6cb-2641-44a8-b806-a45a9fcf82e8" />
 
 I doubt they're going to be importing our 50k to 100k F-150s on the average income of $289 USD.
@@ -86,6 +88,7 @@ Many things are not. Even things that make no sense to tariff. Coffee, mangoes a
 This will create a deadweight loss. Industries that use coffee as an input must cut jobs since they can't substitute and eat the price increases. I'm sorry to the baristas out there, all of the coffee in the country just got more expensive.
 
 The potential deadweight loss also drives out low margin manufacturing businesses that use these products as an input. This is already happening publicly with Mr. Beast chocolate bars, but is indicative of pain to come.
+
 <img width="755" alt="Screenshot 2025-04-08 at 10 51 34 PM" src="https://github.com/user-attachments/assets/ed10dfeb-02f1-44cc-98dd-19972c4d1361" />
 
 The next step here is corrupt carve outs for favors to Trump.
@@ -93,6 +96,7 @@ The next step here is corrupt carve outs for favors to Trump.
 Russia and Belarus are currently untariffed, supposedly because they're negotiating on a ceasefire hasn't progressed, yet Ukraine wasn't. 
 
 The Trump family is not shy about opening up avenues for corruption. If you are a lobbyist in Washington I'm sure a lot of money is up for grabs.
+
 <img width="847" alt="Screenshot 2025-04-08 at 10 49 30 PM" src="https://github.com/user-attachments/assets/207cffbb-1d64-42f2-83f5-46e6907b9887" />
 
 I mean, who wouldn't want to go golfing in Hanoi?
@@ -162,8 +166,11 @@ Through the Signal leak we found out the private thoughts of the Vice President 
 Considering the OpSec posture of admin officials it's safe to assume that European intelligence, and every other one, is very aware of communications happening in the admin. I doubt they're much better than what we've already seen. 
 
 This is the third largest economy in the world, you think they will cave immediately and negotiate? A large majority of the Europeans absolutely hate all of this, even more than left wing Americans.
+
 <img width="947" alt="Screenshot 2025-04-09 at 1 19 35 AM" src="https://github.com/user-attachments/assets/03fc6b67-7039-467a-a04b-c0a8b3a2b8b2" />
+
 <img width="643" alt="Screenshot 2025-04-09 at 1 18 05 AM" src="https://github.com/user-attachments/assets/e8f8bf24-4c9e-40bd-a3e2-d43a560f8f50" />
+
 <img width="665" alt="Screenshot 2025-04-09 at 1 17 32 AM" src="https://github.com/user-attachments/assets/2284a5e4-b860-4814-86d2-fc797e756fbc" />
 
 The Chinese are in the same boat for obvious reasons.
@@ -191,15 +198,18 @@ Tariffs are the medicine to fix the American economy which spent the last few de
 
 Now we need to rebuild our manufacturing base in order to rvturn to that. This is usually accompanied by some sad photo of a rust belt town. I grew up in an area like this so I have some opinions.
 
-The messaging is that we need to go from this: 
+The messaging is that we need to go from this:
+
 ![Pasted image 20250408232741](https://github.com/user-attachments/assets/64c39466-a0d1-41a5-af2a-ed7f0228b789)
 
-To this: 
+To this:
+
 ![Pasted image 20250408232515](https://github.com/user-attachments/assets/db52e9b6-b2f7-4d6f-9edf-742cf471d09b)
 
 For a good amount of people on the right the idea collapses down to, "bring back the jobs". Or more specifically the imaginary lifestyle of a 1950s household, where one man could support a wife, two children, vacations and a set of new cars.  
 
-This is a fantasy. Life in the 50s was incomprehensively worse than it is today. [One third of homes in the United States lacked indoor plumbing,](https://www.census.gov/data/tables/time-series/dec/coh-plumbing.html) and car crashes killed people twice as often, ok? It was closer to Fallout than it is to the marketing material. What you think is normal was a middle upper class lifestyle back then. 
+This is a fantasy. Life in the 50s was incomprehensively worse than it is today. [One third of homes in the United States lacked indoor plumbing,](https://www.census.gov/data/tables/time-series/dec/coh-plumbing.html) and car crashes killed people twice as often, ok? It was closer to Fallout than it is to the marketing material. What you think is normal was a middle upper class lifestyle back then.
+
 ![Pasted image 20250409000118](https://github.com/user-attachments/assets/04cae3ba-7359-43f8-8789-ce1700309483)
 
 On the more extreme parts of the right this blends with the stronger idea of "destroy the fake email and office jobs that women have so they are forced to become my wife". No more [HR jobs where you make tiktoks](https://x.com/knowyourmeme/status/1811834126195961915) when you have to do **[this](https://x.com/VertigoWarrior/status/1867745438083772715)** in the new economy! Gotcha!
@@ -245,6 +255,7 @@ In a way this is a huge leap of faith by Trump. He's assuming that if he destroy
 Most frustrating of all, you know who had effective industrial policy? 
 Joe fucking Biden, or the 25 year olds puppeting his corpse doesn't matter to me. We can cover that another time. 
 # Will They Stop? 
+
 ![5B4E1ACA-3114-43FD-AFBA-E61D72DD6E26_1_105_c](https://github.com/user-attachments/assets/1c57a7ab-b929-4576-a7b9-a6a069cca70b)
 
 No, I don't think they will.
@@ -270,7 +281,9 @@ JPMC, Goldman, etc. have to be more cautious about estimates than I do. I believ
 In the physical economy who is hiring right now? Only people who will soon stop. 
 
 Basically every business person in the economy is already cowering in fear of these tariffs and we should expect it to worsen as they continue.
+
 ![Pasted image 20250409004552](https://github.com/user-attachments/assets/d2b67e7e-d393-4102-a3ca-20c4d7c7a253)
+
 ![Pasted image 20250409004601](https://github.com/user-attachments/assets/dd25d563-0866-4162-8c64-7878920f8bcd)
 
 When things break they break in accelerating ways. There's still time to pull out for Trump. The market is currently begging for good news, and will rocket up on anything even fake tweets. 
