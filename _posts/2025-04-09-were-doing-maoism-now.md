@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We're Doing Maoism Now? 
-imgae: https://github.com/user-attachments/assets/18712373-9fc4-49c9-a723-74c9a8fbb3a3
+image: https://github.com/user-attachments/assets/18712373-9fc4-49c9-a723-74c9a8fbb3a3
 ---
 
 There's a lot to talk about!
