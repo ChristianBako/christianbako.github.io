@@ -177,4 +177,22 @@
     <div class="post-content">
         {{ content }}
     </div>
+          <div>
+                <p>If you liked what you read, you know what to do for more.</p>
+                <h3>Subscribe!</h3>
+                <form
+                        action="https://buttondown.email/api/emails/embed-subscribe/chrisby"
+                        method="post"
+                        target="popupwindow"
+                        onsubmit="window.open('https://buttondown.email/chrisby', 'popupwindow')"
+                        class="embeddable-buttondown-form"
+                >
+                    <label for="bd-email">Enter your email:</label>
+                    <input class="subscribeForm" type="email" name="email" id="bd-email"/>
+                    <input class="subscribeForm" type="submit" value="Subscribe"/>
+                    <p>
+                        <a href="https://buttondown.email/refer/chrisby" target="_blank">Powered by Buttondown.</a>
+                    </p>
+                </form>
+          </div>
 </body>
