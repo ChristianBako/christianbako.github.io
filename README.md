@@ -1,4 +1,11 @@
+# DEPRECATED 
+
+I decided to move to something hosted on a more modern stack because of limits on gh pages. Keeping this around just for fun.
+
+
+
 # christianbako.github.io
+
 My small public facing blog 
 
 
